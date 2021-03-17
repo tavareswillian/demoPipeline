@@ -30,7 +30,7 @@ jobs:
     environment:
       name: hmg
       url: http://localhost:8080/demo/listar
-    needs: build
+    needs: dev
     steps:
       - name: Run a one-line script
         run: echo Deploy HMG!
