@@ -30,7 +30,7 @@ jobs:
     environment:
       name: hmg
       url: http://localhost:8080/demo/listar
-    needs: dev
+    needs: deploy-dev
     steps:
       - name: Run a one-line script
         run: echo Deploy HMG!
@@ -40,7 +40,7 @@ jobs:
     environment:
       name: hmg
       url: http://localhost:8080/demo/listar
-    needs: build
+    needs: deploy-hmg
     steps:
       - name: Run a one-line script
         run: echo Deploy PRD!
